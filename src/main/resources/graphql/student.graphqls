@@ -1,0 +1,13 @@
+
+type Student {
+    id: ID!,
+    name: String,
+    grade: Int
+ }
+type Query {
+    students(count: Int):[Student]
+    student(id: ID):Student
+}
+type Mutation {
+    createStudent(name:String, grade:Int):Student
+}
